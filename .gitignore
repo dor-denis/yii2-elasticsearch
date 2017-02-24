@@ -30,3 +30,4 @@ phpunit.phar
 # local tests files
 /tests/ActiveRecordTestTrait.php
 /tests/data/config.local.php
+tags

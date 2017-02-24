@@ -185,7 +185,7 @@ class Connection extends Component
             // Elasticsearch service (at least as of Oct., 2015). - TO BE VERIFIED
             // Temporary workaround - simply ignore all invalid nodes
             if (!isset($node['http_address'])) {
-                unset($nodes[$key]);
+                $node['http_address'] = $host;
             }
 
             //Protocol is not a standard ES node property, so we add it manually
